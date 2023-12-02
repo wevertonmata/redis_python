@@ -55,3 +55,10 @@ OK
 ## TTL
 Retorna o tempo restante de vida de uma chave que tem um tempo limite. 
 Esse recurso de introspecção permite que um cliente Redis verifique por quantos segundos uma determinada chave continuará fazendo parte do conjunto de dados.
+
+## Caso de uso
+1. Primeiro busca a informação no Redis
+2. Se encontrou retorna ao requisitante, se não busca no banco SQL ou NoSQL
+3. Carrega as informações para o Redis e enviar a informação para requisitante
+
+![Diagrama](docs\diagram.png)

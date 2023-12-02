@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from models.connection.redis_conn import RedisConnectionHandle
-from models.repository import RedisRepository
+from models.redis.connection.redis_conn import RedisConnectionHandle
+from models.redis.repository import RedisRepository
 
 redis_conn = RedisConnectionHandle().connect()
 redis_repo = RedisRepository(redis_conn)
