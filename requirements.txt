@@ -1,0 +1,9 @@
+pre-commit==2.16.0
+pre-commit-hooks==4.1.0
+pylint==2.12.2
+black==21.12b0
+isort==5.10.1
+docformatter==1.4.0
+tomli<2.0.0
+mistune>=2.0.5
+redis==5.0.1
