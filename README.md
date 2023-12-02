@@ -2,7 +2,7 @@
 # Redis Python
 
 
-#### Imagem docker:
+## Imagem docker:
 
 ```
 docker run --name redis_lhama -d -p 6379:6379 -it redis:3.2.5-alpine
@@ -10,7 +10,7 @@ docker run --name redis_lhama -d -p 6379:6379 -it redis:3.2.5-alpine
 > docker  exec -it <imagem> /bin/sh #Rodar terminal da imagem
 ```
 
-#### Comando CLI
+## Comando CLI
 
 ``` 
 # Iniciar redis no terminal
@@ -52,3 +52,6 @@ OK
 OK
 ```
 
+## TTL
+Retorna o tempo restante de vida de uma chave que tem um tempo limite. 
+Esse recurso de introspecção permite que um cliente Redis verifique por quantos segundos uma determinada chave continuará fazendo parte do conjunto de dados.
